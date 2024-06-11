@@ -17,8 +17,15 @@ class bird4 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityBird4Binding.inflate(layoutInflater)
 
+
         setContentView(R.layout.activity_bird4)
-        binding= ActivityBird4Binding.inflate(layoutInflater)
+
+        setContentView(binding.root)
+        binding.rightarrow3.setOnClickListener{
+            finish()
+        }
+
+
         setContentView(binding.root)
         binding.leftarrow4.setOnClickListener{
             val intent = Intent(this, bird5::class.java)

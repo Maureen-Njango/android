@@ -19,8 +19,11 @@ class bird2 : AppCompatActivity() {
         binding = ActivityBird2Binding.inflate(layoutInflater)
 
         setContentView(binding.root)
+        binding.rightarrow1.setOnClickListener{
+            finish()
+        }
         binding.leftarrow2.setOnClickListener{
-            val intent = Intent(this,Bird3::class.java)
+            val intent = Intent(this,bird4::class.java)
             startActivity(intent)
         }
         Picasso.get().load("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSWtLkrCI60Ozq8QB3zz8s702TEygiC09LgPsP61lBc6EQiWPiLDNsdV0OaoCtBC7BR0QCnhA04E6MFCRlq4sRcANLhSDm2fGNk1iGpPP8")

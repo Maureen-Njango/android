@@ -16,6 +16,10 @@ class Bird3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_bird3)
+        setContentView(binding.root)
+        binding.rightarrow2.setOnClickListener{
+            finish()
+        }
 
         binding.leftarrow3.setOnClickListener {
             val intent = Intent(this, bird4::class.java)
